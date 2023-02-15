@@ -33,7 +33,7 @@ public class SampleRepositoryTests : FirstAppEntityFrameworkCoreTestBase
         {
                 //Act
                 var adminUser = await (await _appUserRepository.GetQueryableAsync())
-                .Where(u => u.UserName == "admin")
+                .Where(u => u.Email == "admin@abp.io")
                 .FirstOrDefaultAsync();
 
                 //Assert
