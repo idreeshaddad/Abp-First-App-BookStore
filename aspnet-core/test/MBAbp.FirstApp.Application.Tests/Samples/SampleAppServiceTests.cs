@@ -27,6 +27,6 @@ public class SampleAppServiceTests : FirstAppApplicationTestBase
 
         //Assert
         result.TotalCount.ShouldBeGreaterThan(0);
-        result.Items.ShouldContain(u => u.UserName == "admin");
+        result.Items.ShouldContain(u => u.Email == "admin@abp.io");
     }
 }
