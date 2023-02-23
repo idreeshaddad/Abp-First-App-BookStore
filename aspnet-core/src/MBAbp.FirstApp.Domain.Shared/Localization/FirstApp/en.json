@@ -33,7 +33,10 @@
     "Permission:Books.Create": "Creating new books",
     "Permission:Books.Edit": "Editing the books",
     "Permission:Books.Delete": "Deleting the books",
-    "FirstApp:58512": "There is already an author with the same name: {name}"
-
+    "FirstApp:58512": "There is already an author with the same name: {name}",
+    "Permission:Authors": "Author Management",
+    "Permission:Authors.Create": "Creating new authors",
+    "Permission:Authors.Edit": "Editing the authors",
+    "Permission:Authors.Delete": "Deleting the authors"
   }
 }

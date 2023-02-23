@@ -5,7 +5,7 @@ using Volo.Abp.Domain.Repositories;
 
 namespace MBAbp.FirstApp.Authors
 {
-    interface IAuthorRepository : IRepository<Author, Guid>
+    public interface IAuthorRepository : IRepository<Author, Guid>
     {
         Task<Author> FindByNameAsync(string name);
 
