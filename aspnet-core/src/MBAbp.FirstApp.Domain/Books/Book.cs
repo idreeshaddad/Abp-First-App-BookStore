@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MBAbp.FirstApp.Authors;
+using System;
 using Volo.Abp.Domain.Entities.Auditing;
 
 namespace MBAbp.FirstApp.Books
@@ -12,5 +13,7 @@ namespace MBAbp.FirstApp.Books
         public DateTime PublishDate { get; set; }
 
         public float Price { get; set; }
+
+        public Guid AuthorId { get; set; }
     }
 }
