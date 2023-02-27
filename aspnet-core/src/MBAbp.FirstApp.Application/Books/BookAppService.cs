@@ -5,7 +5,6 @@ using System.Linq.Dynamic.Core;
 using System.Threading.Tasks;
 
 using MBAbp.FirstApp.Authors;
-using MBAbp.FirstApp.Books;
 using MBAbp.FirstApp.Permissions;
 using Microsoft.AspNetCore.Authorization;
 using Volo.Abp.Application.Dtos;
@@ -13,8 +12,7 @@ using Volo.Abp.Application.Services;
 using Volo.Abp.Domain.Entities;
 using Volo.Abp.Domain.Repositories;
 
-namespace Acme.FirstApp.Books;
-
+namespace MBAbp.FirstApp.Books;
 [Authorize(FirstAppPermissions.Books.Default)]
 public class BookAppService :
     CrudAppService<Book, BookDto, Guid, PagedAndSortedResultRequestDto, CreateUpdateBookDto>, IBookAppService
